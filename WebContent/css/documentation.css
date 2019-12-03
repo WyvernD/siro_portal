@@ -1,0 +1,178 @@
+.documentation
+{
+    width: auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.documentation .documentation_container .prev_container
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+}
+
+.documentation .documentation_container .next_container
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 10%;
+}
+
+
+.documentation .documentation_container
+{
+	height: 100%;
+    position: relative;
+}
+
+.documentation .detalle_documentation
+{
+	height: 100%;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+}
+
+.documentation .documentation_bg
+{
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.documentation .prev
+{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.documentation .next
+{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+}
+
+.documentation .mask
+{
+	width: 100%;
+    height: 100%;
+    background-color: rgba(1, 66, 101, 0.69);
+    display: flex;
+    align-items: center;
+}
+
+.documentation .row .col-md-4
+{
+	margin-top: 1rem;
+}
+
+.documentation .row .card
+{
+	width: unset !important;
+    border: 4px solid #009cde;
+}
+
+.documentation .row .card .card-body
+{
+	padding: 0;
+	height: 300px;
+	position: relative;
+}
+
+.documentation .row .card .card-body img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.documentation .row .card .card-body .card_information
+{
+    position: absolute;
+    width: 70%;
+    height: 70px;
+    right: 0;
+    bottom: 15px;
+    border: 4px solid #009cde;
+    border-right: 0 !important;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.documentation .row .card .card-body .card_information:after
+{
+	content: '';
+    background-color: inherit;
+    width: 110%;
+    position: absolute;
+    display: block;
+    right: 10px;
+    bottom: -4px;
+    transform: skewX(10deg);
+    transform-origin: 100%;
+    border: 4px solid #009cde;
+    border-right: inherit;
+    height: inherit;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.documentation .row .card .card-body .card_information .content
+{
+	height: 100%;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.documentation .row .card .card-body .card_information .content .text
+{
+    position: absolute;
+    height: 100%;
+    text-align: left;
+}
+
+.documentation .row .card .card-body .card_information .content button
+{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.documentation .row .card .card-body .card_information .content .text .title
+{
+    color: #f38e24;
+    margin-bottom: 0;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.documentation .row .card .card-body .card_information .content .text .date
+{
+    color: #ccc;
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+}

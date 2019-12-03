@@ -1,0 +1,132 @@
+.btn_detalle_noti
+{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    height: 30px !important;
+}
+
+.detalle_noti_img
+{
+	overflow-x: hidden;
+	padding: 0 0 0 1rem;
+}
+
+.detalle_noti_img img
+{
+	width: 100%;
+	height: 100vh;
+}
+
+.detalle_contenido_noti
+{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background: white;
+	box-shadow: -20px 0px 20px 20px rgb(255, 255, 255);
+	position: relative;
+	height: 100vh;
+}
+
+.detalle_body_noti
+{
+	text-align: justify;
+	padding-top: 1.5rem;
+	overflow-y: auto;
+    height: 70%;
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+}
+
+.detaller_header_noti
+{
+	padding-top: 7rem;
+	position: relative;
+}
+
+.detaller_header_noti .fragmento
+{
+    height: 65px;
+    width: 10px;
+    background: white;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px 5px 5px 8px;
+    top: 114px;
+    transform: skewX(200deg);
+    left: -17px;
+}
+
+.detaller_header_noti .contenido_header
+{
+	position: relative;
+	background: rgb(0, 153, 220) !important;
+    border-radius: 5px;
+}
+
+.detaller_header_noti .contenido_header:after
+{
+	content: '';
+    position: absolute;
+    top: 0;
+    background: inherit;
+    height: 100%;
+    width: 43px;
+    transform: skewX(200deg);
+    left: -20px;
+    border-radius: 5px 5px 5px 8px;
+}
+
+.detaller_header_noti .contenido_header h2, .detaller_header_noti .contenido_header p
+{
+	color: white;
+	margin-left: 75px;
+}
+
+.prev_detalle_noti
+{
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    bottom: 0px;
+    transform: rotate(90deg);
+    font-size: 2rem;
+    color: white;
+}
+
+.next_detalle_noti
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 10px;
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    color: white;
+}
+
+.back_noti
+{
+    transform: rotate(90deg);
+    font-size: 2rem;
+    color: #009cde;
+    position: absolute;
+}
+
+@media (max-width: 767px)
+{
+	.detaller_header_noti .contenido_header h2, .detaller_header_noti .contenido_header p
+	{
+		font-size: 23px;
+	}
+}
+
+@media (max-width: 575px)
+{
+	.detaller_header_noti .contenido_header h2, .detaller_header_noti .contenido_header p
+	{
+		margin-left: 50px;
+	}
+}

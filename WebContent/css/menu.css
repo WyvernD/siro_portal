@@ -1,0 +1,452 @@
+.menu
+{
+	height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 90;
+}
+
+.menu #info_siro_2, .menu #info_am_2
+{
+	display: none;
+	cursor: pointer;
+}
+
+.menu #info_siro_2 a, .menu #info_am_2 a
+{
+	text-decoration: none;
+}
+
+.menu .menu_slide
+{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu_slide .menu-carousel
+{
+    width: 100%;
+}
+
+.menu .menu_slide .menu-carousel .contenido
+{
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	display: flex;
+	width: 100%;
+}
+
+.menu .menu_slide .menu-carousel .fc-icon-left-single-arrow, .menu .menu_slide .menu-carousel .fc-icon-right-single-arrow
+{
+	color: #009cde;
+    font-size: 2rem;
+}
+
+.menu .content_menu
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.menu .content_menu .subcontent_menu
+{
+	height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.menu .item1
+{
+	position: absolute;
+	top: 0;
+	left: 30%;
+}
+
+.menu .item2
+{
+	position: absolute;
+	top: 0;
+	right: 30%;
+}
+
+.menu .item3
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.menu .item3 .logo
+{
+	left: -50px;
+	top: -50px;
+}
+
+.menu .item3 .information
+{
+	left: 10px;
+	top: -30px;
+}
+
+.menu .item4
+{
+	position: absolute;
+	left: 20%;
+	bottom: 0;
+}
+
+.menu .item5
+{
+	position: absolute;
+	right: 20%;
+	bottom: 0;
+}
+
+.menu .logo
+{
+	z-index: 1;
+	position: relative;
+}
+
+.menu .information
+{
+	left: 60px;
+    position: absolute;
+    top: 20px;
+    min-width: 250px;
+    height: 80px;
+    background: #fff;
+    display: none;
+}
+
+.menu .parafo_btn
+{
+	position: absolute;
+    bottom: -16px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.menu .information:after
+{
+    content: 'hola';
+    height: inherit;
+    width: 110%;
+    background-color: inherit;
+    position: absolute;
+    transform-origin: 100%;
+    transform: skewX(30deg);
+    border-bottom-right-radius: 20px;
+    top: 0;
+    z-index: -1;
+}
+
+.menu .information .text
+{
+    height: 80px;
+    padding-left: 3.5rem;
+    font-size: 13px;
+    color: #009cde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu .information .text p
+{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.menu .information .btn_menu
+{
+    position: absolute;
+    z-index: 1;
+    right: -30px;
+    bottom: 0;
+    width: 40px;
+    background-color: transparent;
+    color: #fff;
+    text-align: right;
+    height: 80px;
+}
+
+.menu .information .btn_menu:after
+{
+	content: '';
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    left: 22px;
+    background-color: #009cde;
+    border-bottom-right-radius: 20px;
+    transform-origin: 100%;
+    transform: skewX(30deg);
+    z-index: -1;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.menu .information .end
+{
+    position: absolute;
+    height: 80px;
+    width: 20px;
+    background-color: #009cde;
+    top: 0;
+    right: -55px;
+    transform: skewX(30deg);
+}
+
+#menu_modal_title
+{
+	text-align: center;
+    color: #00aeb0;
+    font-weight: bold;
+}
+
+#menu_modal_logo
+{
+	margin: auto;
+}
+
+#menu_modal_logo img
+{
+	width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.huecos_logo img
+{
+	width: auto !important;
+}
+
+.siro_logo img
+{
+	width: unset !important;
+	max-height: unset !important;
+	max-width: unset !important;
+}
+
+.sgvial_logo img
+{
+	width: unset !important;
+	max-height: unset !important;
+	max-width: unset !important;
+}
+
+/*Rewrite css modal bootstrap*/
+.menu_dialog
+{
+	top: 5%;
+}
+
+.menu_modal_content
+{
+    background: transparent;
+    border: 0;
+    margin: auto;
+}
+
+.menu_modal_content .menu_modal_header
+{
+	border: 0;
+	padding: 5px;
+}
+
+.menu_modal_content .menu_modal_body
+{
+	background-color: #fff;
+    border: 3px solid #009cda;
+    border-top: 5px solid #009cda;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.menu_modal_content .menu_modal_body #menu_modal_footer
+{
+	text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu_modal_content .menu_modal_header button
+{
+	margin: auto;
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 3px solid #009cda;
+    display: flex;
+    cursor: pointer;
+}
+
+.menu_modal_content .menu_modal_header button span
+{
+	margin-top: -4px;
+	color: #009cda;
+}
+
+/*Sobreescribir slide de boostrap*/
+
+.carousel-control-next-icon
+{
+    background-image: url(../img/next.png) !important;
+    background-size: 30px;
+}
+
+.carousel-control-prev-icon
+{
+    background-image: url(../img/prev.png) !important;
+    background-size: 30px;
+}
+
+.carousel-inner
+{
+	width: 90% !important;
+	margin: auto !important;
+}
+
+.carousel-inner .w-100
+{
+	max-height: 450px !important;
+}
+
+/*Media querys*/
+@media (max-width: 1400px)
+{
+	.menu .item1
+	{
+		left: 25%;
+	}
+	
+	.menu .item2
+	{
+		right: 35%;
+	}
+	
+	.menu .item4
+	{
+		left: 15%;
+	}
+	
+	.menu .item5
+	{
+		right: 25%;
+	}
+}
+
+@media (max-width: 1250px)
+{
+	.menu .item1
+	{
+		left: 20%;
+	}
+}
+
+@media (max-width: 1150px)
+{
+	.menu .item1
+	{
+		left: 15%;
+	}
+	
+	.menu .item3
+	{
+		left: 45%;
+	}
+	
+	.menu .item4
+	{
+		left: 10%;
+	}
+	
+	.menu .item5
+	{
+		right: 30%;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+	.menu .item1
+	{
+		left: 0%;
+	}
+	
+	.menu .item2
+	{
+		right: 35%;
+	}
+	
+	.menu .item3
+	{
+		left: 35%;
+	}
+	
+	.menu .item4
+	{
+		left: 0%;
+	}
+	
+	.menu .item5
+	{
+		right: 35%;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.content_menu
+	{
+		display: none !important;
+	}
+}
+
+@media (max-width: 450px)
+{
+	.sgvial_logo img
+	{
+	    width: 100% !important;
+	    max-width: 300px !important;
+	    max-height: 200px !important;
+	}
+}
+
+@media (max-width: 430px)
+{
+	.siro_logo img
+	{
+		    width: 100% !important;
+	    max-width: 300px !important;
+	    max-height: 200px !important;
+	}
+	
+	.sgvial_logo img
+	{
+	    width: 100% !important;
+	    max-width: 300px !important;
+	    max-height: 200px !important;
+	}
+}
+
+@media (max-height: 417px)
+{
+	.menu
+	{
+		width: 100%;
+	}
+}

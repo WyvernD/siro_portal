@@ -1,0 +1,275 @@
+#event_modal .modal-content
+{
+    background: transparent;
+    border: 0;
+    width: 600px;
+    margin: auto;
+    max-width: 90%;
+}
+
+#event_modal .modal-content .modal-header
+{
+	border: 0;
+	padding: 5px;
+}
+
+#event_modal .modal-content .modal-body
+{
+	background-color: #fff;
+    border: 3px solid #009cda;
+    border-top: 5px solid #009cda;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 15px;
+}
+
+#event_modal .modal-content .modal-header button
+{
+	margin: auto;
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 3px solid #009cda;
+    display: flex;
+    cursor: pointer;
+}
+
+#event_modal .modal-content .modal-header button span
+{
+	margin-top: -4px;
+	color: #009cda;
+}
+
+#dialog-evento .lblEvento,.popOverEvento .lblEvento {
+	display: inline-block;
+	width: 100px;
+}
+
+#dialog-evento b,.popOverEvento b {
+	color: #2b9940;
+}
+
+.popOverEvento {
+	position: absolute;
+	z-index: 99;
+	background: #ffffff;
+	color: #000000;
+	border: 2px solid #C0C0C0;
+	padding: 5px;
+	border-radius: 5px;
+	max-width: 300px;
+}
+
+.popOverEvento:after,.popOverEvento:before {
+	top: 50%;
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.popOverEvento:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #ffffff;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+.popOverEvento:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #C0C0C0;
+	border-width: 17px;
+	margin-top: -17px;
+}
+
+.events
+{
+    width: auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.events .events_bg
+{
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.events .mask
+{
+	width: 100%;
+    height: 100%;
+    background-color: rgba(1, 66, 101, 0.69);
+    display: flex;
+    align-items: center;
+}
+
+.events .mask .event_date
+{
+	background-color: #fff;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    z-index: 1;
+    border: 4px solid #009cde;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.events .mask .event_note
+{
+	background-color: #009cded9;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.events .mask .event_note .btn_toggle_event
+{
+    background: #fff;
+    color: #007bff;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    border-top-right-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+/*Rewrite class of fullcalendar library*/
+.events .mask .fc-day
+{
+	cursor: pointer;
+}
+
+.events .mask .fc-left > button, .events .mask .fc-right > button
+{
+	background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: unset;
+}
+
+.events .mask .fc-left > button:focus, .events .mask .fc-right > button:focus
+{
+	outline: none;
+}
+
+.events .mask .fc-left > button > span, .events .mask .fc-right > button > span
+{
+	color: #009cde;
+    font-size: 2rem;
+}
+
+.events .mask .fc-center > h2
+{
+	color: #808283;
+}
+
+.events .mask .fc-view-container th
+{
+	border: 0 !important;
+}
+
+.events .calendar .fc-view-container td
+{
+	border: 0;
+	cursor: pointer;
+}
+
+.events .mask .fc-body .fc-widget-content .fc-day-grid
+{
+	margin-left: -20px;
+}
+
+.events .calendar .fc-event-container
+{
+	display: none !important;
+}
+
+.events .calendarAgenda .fc-event-container a
+{
+	background: transparent !important;
+	border-color: transparent !important;
+	color: white;
+	cursor: pointer;
+}
+
+.events .calendarAgenda .fc-view-container td
+{
+	border: 0;
+	background: transparent !important;
+}
+
+.events .calendarAgenda .fc-toolbar
+{
+	margin-top: 2rem;
+}
+
+.events .calendarAgenda .fc-left > button > span, .events .calendarAgenda .fc-right > button > span, .events .calendarAgenda .fc-center > h2 
+{
+	color: white !important;
+}
+
+.events .calendarAgenda .fc-day-grid
+{
+	margin-left: unset !important;
+}
+
+.events .calendarAgenda .fc-day-grid .fc-content-skeleton
+{
+	background: transparent;
+	z-index: 20;
+	height: 100%;
+	padding-left: 2rem;
+}
+
+/*Media querys*/
+@media (max-width: 767px)
+{
+	.events .mask .event_note
+	{
+		border-radius: 5px !important;
+	}
+	
+	.events .mask .event_date
+	{
+		border-radius: 5px !important;
+	}
+}
+
+@media (max-width: 575px)
+{
+	.events .mask
+	{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

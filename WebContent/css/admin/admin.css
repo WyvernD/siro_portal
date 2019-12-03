@@ -1,0 +1,93 @@
+.form-group label
+{
+	color: #009cdf;
+	font-size: 12px !important; 
+}
+
+.SumoSelect
+{
+	width: 100% !important;
+}
+
+.SumoSelect label
+{
+	color: #797976 !important;
+}
+
+.SumoSelect>.CaptionCont>span
+{
+	margin-top: -2px !important;
+}
+
+input, .SumoSelect, .SumoSelect>.CaptionCont, select, button
+{
+	height: 30px !important;
+}
+
+hr
+{
+	border: 1px dashed #ccc;
+}
+
+/********************************************************************/
+/*****************************TABLAS*********************************/
+/********************************************************************/
+table
+{
+	border: 1px solid rgb(0, 153, 220);
+}
+
+table thead tr th
+{
+	border-left: 1px solid rgb(0, 153, 220);
+	border-bottom: 0 !important;
+	border-right: 0 !important;
+	border-top: 0 !important;
+	background: #ddf4fa;
+	color: #7c7c7c;
+    padding-left: 10px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 30px;
+    vertical-align: middle !important;
+    font-size: 11px;
+    font-style: italic;
+}
+
+table thead tr th:first-child
+{
+	border-left: 0 !important;
+}
+
+table tbody tr:last-child td
+{
+	border-bottom: 1px solid rgb(0, 153, 220);
+}
+
+table tbody tr td
+{
+	border-left: 1px solid rgb(0, 153, 220);
+	padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    height: 30px !important;
+    vertical-align: middle !important;
+    border-top: 0 !important;
+    font-size: 11px;
+}
+
+table tbody tr td:first-child
+{
+	border-left: 0;
+}
+
+.icon-edit, .icon-show_docs
+{
+    color: rgb(0, 153, 220) !important;
+    font-size: 1.5em;
+}
+
+.icon-delete
+{
+	color: #db2b33 !important;
+    font-size: 1.5em;
+}

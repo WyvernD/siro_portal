@@ -1,0 +1,13 @@
+.index_slide .owl-carousel .owl-item img
+{
+	height: 100vh;
+	width: 100%;
+}
+
+@media (max-width: 767px)
+{
+	.index_slide .owl-carousel .owl-item img
+	{
+		width: auto !important;
+	}
+}

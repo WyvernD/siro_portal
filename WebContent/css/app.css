@@ -1,0 +1,203 @@
+@font-face
+{
+    font-family: "m-pro";
+    src: url(../Fonts/MyriadPro-Regular.otf);
+}
+
+.no_scroll
+{
+	overflow: hidden;
+}
+
+.ui-widget-overlay.ui-front
+{
+    background-image: none;
+    background-color: #0e0e0e;
+    opacity: 0.8;
+}
+
+.btn_success
+{
+	border: none;
+	color: #fff;
+	background: #02435d;
+	padding: 0;
+}
+
+.btn_success:hover
+{
+	color: #fff;
+    background-color: #0a739e !important;
+    outline: none;
+    border: none;
+}
+
+.link_admin_span
+{
+	font-size: 2em;
+	margin-right: 10px;
+}
+
+.file
+{
+	width: 100%;
+}
+
+.load_container
+{
+	z-index: 10000;
+    height: 500%;
+    width: 100%;
+    position: absolute;
+    background: rgba(226, 226, 226, 0.52);
+}
+
+.load_container .load
+{
+    background: url(../img/loading.svg);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    background-repeat: no-repeat;
+    background-size: 115px;
+    background-position: 50% 20%;
+    margin-top: 25vh;
+}
+
+body, .ui-widget, .ui-helper-reset
+{
+	font-family: 'm-pro';
+	font-weight: normal;
+}
+
+.modal-admin
+{
+    width: 90% !important;
+    position: fixed !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    -webkit-box-shadow: 0px 0px 7px 3px #ccc;
+    -moz-box-shadow: 0px 0px 7px 3px #ccc;
+    box-shadow: 0px 0px 7px 3px #ccc;
+}
+
+.modal-admin .ui-dialog-titlebar
+{
+    background: #797976 !important;
+    border: 0 !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;
+    font-size: 14px !important;
+    font-style: italic !important;
+    
+}
+
+.modal-admin .dialogFormulario
+{
+	padding: 0 !important;
+}
+
+.modal-admin .ui-dialog-titlebar button
+{
+	border: 0;
+    background: #626262;
+    color: #fff !important;
+    cursor: pointer;
+    height: 35px;
+    top: 10px;
+    right: 0;
+    width: 35px;
+    border-top-right-radius: 5px;
+    font-size: 1.3em;
+}
+
+.modal-admin .icon-close:focus
+{
+	outline: none;
+}
+
+.iframe_admin
+{
+	border: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.btnInfo
+{
+   	background-color: #009cde;
+    color: #fff;
+    border: 0;
+}
+
+.btnInfo:focus
+{
+	outline: none;
+	box-shadow: unset;
+}
+
+.pointer
+{
+	cursor: pointer;
+}
+
+.disabled
+{
+	cursor: no-drop;
+}
+
+.btn_hidden
+{
+	background: transparent;
+	border: 0;
+}
+
+.btn_hidden:focus
+{
+	outline: none;
+}
+
+/*Margin top*/
+.m_t_4
+{
+	margin-top: 2rem !important;
+}
+
+/*Media querys*/
+@media (max-width: 576px)
+{
+	.w-xs-100
+	{
+		width: 100%;
+	}
+	
+	.mt_sm_2
+	{
+		margin-top: 1rem;
+	}
+	
+	.mt_sm_0
+	{
+    	margin-top: 0!important;
+	}
+	
+	.modal-admin
+	{
+		width: 100% !important;
+		height: 100vh !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+	
+	.modal-admin .dialogFormulario
+	{
+		height: 100% !important;
+	    overflow-y: auto;
+	    padding-bottom: 5rem !important;
+	}
+}

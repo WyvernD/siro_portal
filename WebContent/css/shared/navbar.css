@@ -1,0 +1,309 @@
+.infoMayus
+{
+	text-align: center;
+    border: 1px solid #ced4da;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.modal-header
+{
+	border-bottom: none !important;
+}
+
+.active_link
+{
+	text-decoration: underline !important;
+}
+.item_admin p:hover
+{
+	opacity: 0.5;
+}
+
+.nav_bar
+{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    justify-content: space-between;
+    top: 0;
+}
+
+.nav_bar .nav_menu
+{
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.nav_bar .nav_menu:after
+{
+	content: '';
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: -30px;
+    z-index: -1;
+    webkit-box-shadow: 0px 0px 7px 3px #009cde;
+    -moz-box-shadow: 0px 0px 7px 3px #009cde;
+    box-shadow: 0px 0px 7px 3px #009cde;
+    transform: skewX(30deg);
+    border-bottom-left-radius: 10px;
+}
+
+.nav_bar .nav_menu .navbar
+{
+	background-color: transparent !important;
+}
+
+.nav_bar .nav_menu .navbar #admin_content, .nav_bar .nav_menu .navbar #logout
+{
+	display: none;
+	position: absolute;
+    background: rgb(255, 255, 255);
+    top: 70px;
+    border-radius: 5px;
+    max-width: 300px;
+    right: 100px;
+    color: rgb(0, 153, 220) !important;
+    -webkit-box-shadow: 0px 0px 7px 3px #009cde;
+    -moz-box-shadow: 0px 0px 7px 3px #009cde;
+    box-shadow: 0px 0px 7px 3px #009cde;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav_bar .nav_menu .navbar #admin_content .item_admin p, .nav_bar .nav_menu .navbar #logout p
+{
+	margin-bottom: 0 !important;
+}
+
+.nav_bar .nav_menu .navbar #admin_content .item_admin hr, .nav_bar .nav_menu .navbar #logout hr
+{
+	margin-top: .5rem !important;
+	margin-bottom: .5rem !important;
+}
+
+.nav_bar .navbar-toggler
+{
+	border-color: #009cde !important;
+	cursor: pointer;
+}
+
+.nav_bar .navbar-toggler:focus
+{
+	outline: none;
+}
+
+.nav_bar .nav_menu .navbar .form-inline
+{
+	position: relative;
+	display: flex !important;
+}
+
+.nav_bar .nav_menu .navbar .form-inline .btn_hidden
+{
+    top: 14px;
+}
+
+.nav_bar .nav_menu .navbar-collapse a
+{
+	color: rgb(0, 153, 220) !important;
+    font-size: 1.5rem;
+    margin-top: 6px;
+    padding-bottom: 0;
+    margin-left: 10px;
+}
+
+.nav_bar .nav_menu .navbar-collapse a:hover
+{
+	opacity: 0.5;
+}
+
+.nav_bar .nav_menu .navbar .logo_alcaldia
+{
+	margin-left: 20px;
+}
+
+.nav_dialog
+{
+	top: 20%;
+}
+
+.nav_dialog_register
+{
+	top: 0%;
+}
+
+.nav_modal_content
+{
+    background: transparent;
+    border: 0;
+    width: 300px;
+    margin: auto;
+}
+
+.nav_modal_content .nav_modal_header
+{
+	border: 0;
+	padding: 5px;
+}
+
+.nav_modal_content .nav_modal_body
+{
+	background-color: #fff;
+    border: 3px solid #009cda;
+    border-top: 5px solid #009cda;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.nav_modal_content_register
+{
+    background: transparent;
+    border: 0;
+    width: 500px;
+    margin: auto;
+}
+
+.nav_modal_content_register .nav_modal_body_register
+{
+	background-color: #fff;
+    border: 3px solid #009cda;
+    border-top: 5px solid #009cda;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.nav_modal_content_register .nav_modal_header button
+{
+	margin: auto;
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 3px solid #009cda;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav_modal_content_register .nav_modal_header button span
+{
+	color: #009cda;
+}
+.nav_modal_content_register .nav_modal_header .close
+{
+	line-height: 0;
+}
+
+.nav_modal_body_register input
+{
+	line-height: 1.2;
+}
+
+.nav_modal_body_register label
+{
+	color: #757575;
+}
+
+.nav_modal_content .nav_modal_header button
+{
+	margin: auto;
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    border: 3px solid #009cda;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav_modal_content .nav_modal_header button span
+{
+	margin-top: -4px;
+	color: #009cda;
+}
+
+.close:focus, .close:hover {
+    color: #009cda !important;
+    text-decoration: none !important;
+    opacity: .75 !important;
+}
+
+.form-clave::placeholder {
+	font-style: italic; 
+	font-size: 14px;
+}
+
+/*Media querys*/
+@media (max-width: 1034px)
+{
+	.logo_alcaldia
+	{
+		display: none !important;
+	}
+}
+
+@media (max-width: 991px)
+{
+	.nav_bar .nav_menu .navbar .form-inline
+	{
+		display: none !important;
+	}
+	
+	.nav_bar .nav_menu .navbar #admin_content, .nav_bar .nav_menu .navbar #logout
+	{
+		right: 80px;
+	}
+}
+
+@media (max-width: 767px)
+{
+	.nav_bar .nav_menu
+	{
+		border-bottom-left-radius: 0;
+		width: 100%;
+	}
+	
+	.nav_bar .nav_menu .navbar-collapse a
+	{
+	    margin-top: 0px;
+	}
+	
+	.nav_bar .nav_menu .navbar #admin_content, .nav_bar .nav_menu .navbar #logout
+	{
+		right: 60px;
+	}
+}
+
+@media (max-width: 420px)
+{
+	.logo_portal
+	{
+		display: none;
+	}
+	.nombre_portal
+	{
+		display: block !important;
+		color: #009cde;
+		font-size: 2em;
+	}
+	.nav_bar .nav_menu .navbar #admin_content
+	{
+		top: 60px;
+	}
+	
+	.nav_bar .nav_menu .navbar #admin_content, .nav_bar .nav_menu .navbar #logout
+	{
+		right: 60px;
+	}
+}

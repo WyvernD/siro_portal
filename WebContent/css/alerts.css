@@ -1,0 +1,93 @@
+.ui_advertencia_siro, .ui_informacion_siro, .ui_error_siro, .ui_confirmar_siro
+{
+	z-index: 1051 !important;
+	padding: 0 !important;
+}
+
+.ui_advertencia_siro .ui-dialog-titlebar
+{
+    background: #eaca52;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: white !important;
+    font-style: italic !important;
+}
+
+.ui_advertencia_siro .ui-dialog-titlebar button, .ui_informacion_siro .ui-dialog-titlebar button, .ui_error_siro .ui-dialog-titlebar button, .ui_confirmar_siro .ui-dialog-titlebar button
+{
+	display: none !important;
+}
+
+.ui_advertencia_siro .ui-dialog-content, .ui_informacion_siro .ui-dialog-content, .ui_error_siro .ui-dialog-content, .ui_confirmar_siro .ui-dialog-content
+{
+	padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center !important;
+}
+
+.ui_advertencia_siro .ui-dialog-content .dialog_button, .ui_informacion_siro .ui-dialog-content .dialog_button, .ui_error_siro .ui-dialog-content .dialog_button, .ui_confirmar_siro .ui-dialog-content .dialog_button
+{
+    padding: .5rem !important;
+    background: #eaeaea !important;
+    border-top: 1px solid #cec9c9 !important;
+    margin-top: 1rem !important;
+}
+
+.ui_advertencia_siro .ui-dialog-content .btnMensajeCont
+{
+    border: 0 !important;
+    color: white !important;
+    background: #eaca52 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.ui_advertencia_siro .ui-dialog-content .btnMensajeCont, .ui_informacion_siro .ui-dialog-content .btnMensajeCont, .ui_error_siro .ui-dialog-content .btnMensajeCont, .ui_confirmar_siro .ui-dialog-content .btnMensajeCont
+{
+	outline: none !important;
+}
+
+/* Información */
+.ui_informacion_siro .ui-dialog-titlebar, .ui_confirmar_siro .ui-dialog-titlebar
+{
+    background: #69bd55;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: white !important;
+    font-style: italic !important;
+}
+
+.ui_informacion_siro .ui-dialog-content .btnMensajeCont, .ui_confirmar_siro .ui-dialog-content .btnMensajeCont
+{
+    border: 0 !important;
+    color: white !important;
+    background: #69bd55 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+
+.ui_confirmar_siro .ui-dialog-content #btnAceptar_divMensajeCont
+{
+	margin-right: 10px !important;
+}
+
+/* Error */
+.ui_error_siro .ui-dialog-titlebar
+{
+    background: #ea5252;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: white !important;
+    font-style: italic !important;
+}
+
+.ui_error_siro .ui-dialog-content .btnMensajeCont
+{
+    border: 0 !important;
+    color: white !important;
+    background: #ea5252 !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
